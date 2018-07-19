@@ -6,7 +6,6 @@
 <?php
 function deleteSuperCategoria($cat) {
 	$sql = "select * from constituida where super_categoria='$cat';";
-	echo("$cat");
 	$result = pg_query($sql) or die('ERROR: 0' . pg_last_error());
 	while ($row = pg_fetch_assoc($result))
 	{

@@ -32,8 +32,8 @@
     echo("<td><a href=\"ver_categoria.php?categoria={$super_categoria}\">Back</a></td>\n");
 
 		
-	#$result = pg_free_result($result) or die('ERROR: ' . pg_last_error());
-	#pg_close($connection);
+	$result = pg_free_result($result) or die('ERROR: ' . pg_last_error());
+	pg_close($connection);
 	
 ?>
     </body>
